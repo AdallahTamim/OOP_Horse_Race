@@ -1,9 +1,11 @@
+package Part_2;
+
+import Part_2.Horse;
+
 import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
+
 public class Race {
     private int raceLength;
     private Horse[] lanes;
@@ -135,7 +137,7 @@ public class Race {
     // Method to display race statistics
     // Method to display race statistics after the race
     private void displayRaceStatistics() {
-        RaceStatisticsMenu statsMenu = new RaceStatisticsMenu(this); // Pass the Race object to the statistics menu
+        RaceStatisticsMenu statsMenu = new RaceStatisticsMenu(this); // Pass the Part_2.Race object to the statistics menu
         statsMenu.setVisible(true);
     }
 

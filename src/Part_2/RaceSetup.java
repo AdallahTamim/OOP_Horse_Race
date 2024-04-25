@@ -1,3 +1,9 @@
+package Part_2;
+
+import Part_2.Horse;
+import Part_2.Race;
+import Part_2.RaceGUI;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -26,7 +32,7 @@ public class RaceSetup extends JFrame {
         lengthSlider = new JSlider(50, 200, 100);
         laneSlider = new JSlider(2, 5, 3);
 
-        startRaceButton = new JButton("Start Race");
+        startRaceButton = new JButton("Start Part_2.Race");
         startRaceButton.addActionListener(e -> startRace());
 
         displayStatisticsButton = new JButton("Display Statistics"); // Create button for displaying statistics
@@ -58,7 +64,7 @@ public class RaceSetup extends JFrame {
         horseSymbolGroup.add(horseSymbolButton2);
 
         JPanel symbolPanel = new JPanel();
-        symbolPanel.add(new JLabel("Select Horse Symbol:"));
+        symbolPanel.add(new JLabel("Select Part_2.Horse Symbol:"));
         symbolPanel.add(horseSymbolButton1);
         symbolPanel.add(horseSymbolButton2);
         add(symbolPanel);
@@ -68,7 +74,7 @@ public class RaceSetup extends JFrame {
         placeBetButton = new JButton("Place Bet");
 
         for (int i = 1; i <= laneSlider.getValue(); i++) {
-            horseBetDropdown.addItem("Horse " + i);
+            horseBetDropdown.addItem("Part_2.Horse " + i);
         }
         add(new JLabel("Select a horse to bet on:"));
         add(horseBetDropdown);
@@ -99,7 +105,7 @@ public class RaceSetup extends JFrame {
 
             for (int i = 1; i <= numLanes; i++) {
                 char selectedSymbol = horseSymbolButton1.isSelected() ? '\u2658' : '\u265E';
-                String horseName = "Horse " + i;
+                String horseName = "Part_2.Horse " + i;
                 double horseConfidence = 0.75;
                 String horseBreed = breedField.getText();
                 String horseCoatColor = coatColorField.getText();
@@ -115,7 +121,7 @@ public class RaceSetup extends JFrame {
 
             dispose();
 
-            JFrame raceFrame = new JFrame("Horse Race Simulator");
+            JFrame raceFrame = new JFrame("Part_2.Horse Part_2.Race Simulator");
             raceFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             raceFrame.add(raceGUI);
             raceFrame.pack();
@@ -132,7 +138,7 @@ public class RaceSetup extends JFrame {
 
     private void displayStatistics() {
         // Open a new window to display statistics
-        JFrame statsFrame = new JFrame("Race Statistics");
+        JFrame statsFrame = new JFrame("Part_2.Race Statistics");
         JTextArea statsTextArea = new JTextArea();
         JScrollPane scrollPane = new JScrollPane(statsTextArea);
         statsFrame.add(scrollPane);

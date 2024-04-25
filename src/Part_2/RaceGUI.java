@@ -1,3 +1,8 @@
+package Part_2;
+
+import Part_2.Horse;
+import Part_2.Race;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -19,7 +24,7 @@ public class RaceGUI extends JPanel {
         } else {
             raceTimer = new Timer(100, e -> repaint());
             raceTimer.start();
-            System.out.println("Race timer was null, instantiated and started it from startAnimation method as a fallback.");
+            System.out.println("Part_2.Race timer was null, instantiated and started it from startAnimation method as a fallback.");
         }
     }
 

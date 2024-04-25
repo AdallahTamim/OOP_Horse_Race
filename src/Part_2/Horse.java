@@ -1,5 +1,7 @@
+package Part_2;
+
 public class Horse {
-    // Fields of class Horse
+    // Fields of class Part_2.Horse
     private char symbol;
     private String name;
     private double confidence;
@@ -9,7 +11,7 @@ public class Horse {
     private String coatColor;
     private String equipment;
 
-    // Constructor of class Horse with additional customization options
+    // Constructor of class Part_2.Horse with additional customization options
     public Horse(char horseSymbol, String horseName, double horseConfidence, String horseBreed, String horseCoatColor, String horseEquipment) {
         this.symbol = horseSymbol;
         this.name = horseName;

@@ -1,3 +1,5 @@
+package Part_2;
+
 import javax.swing.*;
 
 public class Main {

@@ -1,3 +1,7 @@
+package Part_2;
+
+import Part_2.Race;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
@@ -10,7 +14,7 @@ public class RaceStatisticsMenu extends JFrame {
 
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(400, 300);
-        setTitle("Race Statistics");
+        setTitle("Part_2.Race Statistics");
 
         JTextArea textArea = new JTextArea();
         textArea.setEditable(false);
@@ -18,7 +22,7 @@ public class RaceStatisticsMenu extends JFrame {
         getContentPane().add(scrollPane, BorderLayout.CENTER);
 
         StringBuilder statsBuilder = new StringBuilder();
-        statsBuilder.append("Race Statistics:\n\n");
+        statsBuilder.append("Part_2.Race Statistics:\n\n");
 
         // Generate statistics based on race data
         statsBuilder.append("Total race time: ").append(calculateRaceTime()).append(" milliseconds\n");
