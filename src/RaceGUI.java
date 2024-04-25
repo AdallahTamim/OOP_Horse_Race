@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class RaceGUI extends JPanel {
-    private Race race;
+    private Race race; //this race
     private Timer raceTimer;
     private String message = "";
     private Horse betHorse;
